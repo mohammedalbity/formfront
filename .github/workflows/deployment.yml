@@ -1,0 +1,89 @@
+name: Build and Deploy Vite + Vue App
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 3. Install pnpm
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      # 4. Install dependencies with pnpm
+      - name: Install dependencies
+        run: pnpm install
+
+      # 5. Build app with Vite
+      - name: Build app
+        run: pnpm run build
+
+      # 6. Add .htaccess to dist directory
+      - name: Create .htaccess
+        run: |
+          cat > dist/.htaccess << 'EOL'
+          <IfModule mod_rewrite.c>
+            RewriteEngine On
+            RewriteBase /
+            RewriteRule ^index\.html$ - [L]
+            RewriteCond %{REQUEST_FILENAME} !-f
+            RewriteCond %{REQUEST_FILENAME} !-d
+            RewriteRule . /index.html [L]
+          </IfModule>
+          EOL
+
+      # 7. Add .env file to dist
+      - name: Create .env
+        run: |
+          cat > dist/.env << 'EOL'
+          # Laravel Backend Configuration
+          VITE_API_BASE_URL=https://formend.fikra-ye.app
+          VITE_APP_NAME="Form.io Builder"
+          VITE_APP_ENV=development
+          # Authentication Configuration
+          VITE_AUTH_GUARD=token
+          # Application Settings
+          VITE_DEFAULT_LANGUAGE=en
+          VITE_SUPPORTED_LANGUAGES=en,ar
+          # Debug Settings
+          VITE_DEBUG=false
+          VITE_LOG_LEVEL=info
+          EOL
+
+      # 8. Set up SSH
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      # 9. Remove old project
+      - name: Remove old project
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
+          "rm -rf /home/fikra-ye/domains/formfront.fikra-ye.app/public_html/*"
+
+      # 10. Upload new dist via rsync
+      - name: Upload dist via rsync
+        run: |
+          rsync -avz --delete dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/fikra-ye/domains/formfront.fikra-ye.app/public_html/
+
+      # 11. Set correct file ownership
+      - name: Set correct file ownership
+        run: |
+          ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
+          "chown -R fikra-ye:fikra-ye /home/fikra-ye/domains/formfront.fikra-ye.app/public_html"

@@ -1,0 +1,282 @@
+{
+  "total_usages": 1259,
+  "unique_keys": 608,
+  "problematic_keys": {
+    "forms.management.title": [
+      "/home/mohammed/form/formio/src/views/FormsManagement.vue"
+    ],
+    "forms.management.export": [
+      "/home/mohammed/form/formio/src/views/FormsManagement.vue"
+    ],
+    "forms.management.loading": [
+      "/home/mohammed/form/formio/src/views/FormsManagement.vue"
+    ],
+    "forms.management.delete": [
+      "/home/mohammed/form/formio/src/views/FormsManagement.vue"
+    ],
+    "forms.management.edit": [
+      "/home/mohammed/form/formio/src/views/FormsManagement.vue"
+    ],
+    "forms.management.duplicate": [
+      "/home/mohammed/form/formio/src/views/FormsManagement.vue"
+    ],
+    "common.cancel": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue",
+      "/home/mohammed/form/formio/src/views/FormsManagement.vue",
+      "/home/mohammed/form/formio/src/components/ConfirmModal.vue"
+    ],
+    "formBuilder.export": [
+      "/home/mohammed/form/formio/src/components/FormBuilder.vue",
+      "/home/mohammed/form/formio/src/views/FormPreview.vue"
+    ],
+    "formBuilder.emptyState.title": [
+      "/home/mohammed/form/formio/src/components/FormBuilder.vue",
+      "/home/mohammed/form/formio/src/views/FormPreview.vue"
+    ],
+    "formBuilder.emptyState.description": [
+      "/home/mohammed/form/formio/src/components/FormBuilder.vue",
+      "/home/mohammed/form/formio/src/views/FormPreview.vue"
+    ],
+    "form.success": [
+      "/home/mohammed/form/formio/src/components/FormioRenderer.vue",
+      "/home/mohammed/form/formio/src/views/FormPreview.vue"
+    ],
+    "form.error": [
+      "/home/mohammed/form/formio/src/components/FormioRenderer.vue",
+      "/home/mohammed/form/formio/src/views/FormPreview.vue"
+    ],
+    "publicForm.loading": [
+      "/home/mohammed/form/formio/src/views/PublicForm.vue"
+    ],
+    "auth.name": [
+      "/home/mohammed/form/formio/src/views/Login.vue"
+    ],
+    "auth.email": [
+      "/home/mohammed/form/formio/src/views/Login.vue",
+      "/home/mohammed/form/formio/src/views/FormSubmissions.vue"
+    ],
+    "auth.password": [
+      "/home/mohammed/form/formio/src/views/Login.vue"
+    ],
+    "auth.loading": [
+      "/home/mohammed/form/formio/src/views/Login.vue"
+    ],
+    "auth.language": [
+      "/home/mohammed/form/formio/src/views/Login.vue"
+    ],
+    "submissions.title": [
+      "/home/mohammed/form/formio/src/views/FormSubmissions.vue"
+    ],
+    "submissions.export": [
+      "/home/mohammed/form/formio/src/views/FormSubmissions.vue"
+    ],
+    "submissions.refresh": [
+      "/home/mohammed/form/formio/src/views/FormSubmissions.vue"
+    ],
+    "submissions.loading": [
+      "/home/mohammed/form/formio/src/views/FormSubmissions.vue"
+    ],
+    "submissions.filters.status": [
+      "/home/mohammed/form/formio/src/views/FormSubmissions.vue"
+    ],
+    "common.date": [
+      "/home/mohammed/form/formio/src/views/FormSubmissions.vue"
+    ],
+    "submissions.table.status": [
+      "/home/mohammed/form/formio/src/views/FormSubmissions.vue"
+    ],
+    "submissions.table.data": [
+      "/home/mohammed/form/formio/src/views/FormSubmissions.vue"
+    ],
+    "submissions.table.actions": [
+      "/home/mohammed/form/formio/src/views/FormSubmissions.vue"
+    ],
+    "submissions.view": [
+      "/home/mohammed/form/formio/src/views/FormSubmissions.vue"
+    ],
+    "submissions.delete": [
+      "/home/mohammed/form/formio/src/views/FormSubmissions.vue"
+    ],
+    "submissions.dataTypes.datagrid": [
+      "/home/mohammed/form/formio/src/views/UserSubmissions.vue",
+      "/home/mohammed/form/formio/src/views/FormSubmissions.vue"
+    ],
+    "submissions.dataTypes.editgrid": [
+      "/home/mohammed/form/formio/src/views/UserSubmissions.vue",
+      "/home/mohammed/form/formio/src/views/FormSubmissions.vue"
+    ],
+    "userSubmissions.title": [
+      "/home/mohammed/form/formio/src/views/UserSubmissions.vue"
+    ],
+    "userSubmissions.refresh": [
+      "/home/mohammed/form/formio/src/views/UserSubmissions.vue"
+    ],
+    "userSubmissions.loading": [
+      "/home/mohammed/form/formio/src/views/UserSubmissions.vue"
+    ],
+    "userSubmissions.view": [
+      "/home/mohammed/form/formio/src/views/UserSubmissions.vue"
+    ],
+    "userSubmissions.status": [
+      "/home/mohammed/form/formio/src/views/UserSubmissions.vue"
+    ],
+    "formBuilder.sections.title": [
+      "/home/mohammed/form/formio/src/components/FormBuilder.vue",
+      "/home/mohammed/form/formio/src/components/FormSectionManager.vue"
+    ],
+    "formBuilder.properties.basic": [
+      "/home/mohammed/form/formio/src/components/ComponentPropertiesEditor.vue"
+    ],
+    "formBuilder.properties.description": [
+      "/home/mohammed/form/formio/src/components/ComponentPropertiesEditor.vue"
+    ],
+    "formBuilder.properties.required": [
+      "/home/mohammed/form/formio/src/components/ComponentPropertiesEditor.vue"
+    ],
+    "formBuilder.properties.options": [
+      "/home/mohammed/form/formio/src/components/ComponentPropertiesEditor.vue"
+    ],
+    "formBuilder.properties.validation": [
+      "/home/mohammed/form/formio/src/components/ComponentPropertiesEditor.vue"
+    ],
+    "formBuilder.properties.minLength": [
+      "/home/mohammed/form/formio/src/components/ComponentPropertiesEditor.vue"
+    ],
+    "formBuilder.properties.maxLength": [
+      "/home/mohammed/form/formio/src/components/ComponentPropertiesEditor.vue"
+    ],
+    "formBuilder.properties.min": [
+      "/home/mohammed/form/formio/src/components/ComponentPropertiesEditor.vue"
+    ],
+    "formBuilder.properties.max": [
+      "/home/mohammed/form/formio/src/components/ComponentPropertiesEditor.vue"
+    ],
+    "formBuilder.properties.pattern": [
+      "/home/mohammed/form/formio/src/components/ComponentPropertiesEditor.vue"
+    ],
+    "formBuilder.properties.hidden": [
+      "/home/mohammed/form/formio/src/components/ComponentPropertiesEditor.vue"
+    ],
+    "formBuilder.properties.actions.submit": [
+      "/home/mohammed/form/formio/src/components/ComponentPropertiesEditor.vue"
+    ],
+    "formBuilder.properties.themes.success": [
+      "/home/mohammed/form/formio/src/components/ComponentPropertiesEditor.vue"
+    ],
+    "formBuilder.stepper.title": [
+      "/home/mohammed/form/formio/src/components/FormBuilder.vue",
+      "/home/mohammed/form/formio/src/components/FormStepper.vue"
+    ],
+    "form.loading": [
+      "/home/mohammed/form/formio/src/components/FormioRenderer.vue"
+    ],
+    "form.submit": [
+      "/home/mohammed/form/formio/src/components/FormioRenderer.vue"
+    ],
+    "form.cancel": [
+      "/home/mohammed/form/formio/src/components/FormioRenderer.vue"
+    ],
+    "form.save": [
+      "/home/mohammed/form/formio/src/components/FormioRenderer.vue"
+    ],
+    "common.loading": [
+      "/home/mohammed/form/formio/src/components/DynamicFormRenderer.vue"
+    ],
+    "common.edit": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "common.delete": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "edit": [
+      "/home/mohammed/form/formio/src/components/FormBuilder.vue",
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "delete": [
+      "/home/mohammed/form/formio/src/components/FormBuilder.vue",
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "formBuilder.componentTypes.textfield": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "formBuilder.componentTypes.textarea": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "formBuilder.componentTypes.number": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "formBuilder.componentTypes.email": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "formBuilder.componentTypes.password": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "formBuilder.componentTypes.select": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "formBuilder.componentTypes.radio": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "formBuilder.componentTypes.checkbox": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "formBuilder.componentTypes.button": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "formBuilder.cancel": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "formBuilder.delete": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "formBuilder.actions": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "formBuilder.preview": [
+      "/home/mohammed/form/formio/src/components/FormBuilder.vue",
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "formBuilder.options": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "formBuilder.refresh": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "formBuilder.url": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "formBuilder.value": [
+      "/home/mohammed/form/formio/src/components/ComponentPreview.vue"
+    ],
+    "nav.language": [
+      "/home/mohammed/form/formio/src/components/Layout.vue"
+    ],
+    "footer.brand.description": [
+      "/home/mohammed/form/formio/src/components/Layout.vue"
+    ],
+    "errors.boundary.title": [
+      "/home/mohammed/form/formio/src/components/ErrorBoundary.vue"
+    ],
+    "cancel": [
+      "/home/mohammed/form/formio/src/components/ConfirmModal.vue"
+    ],
+    "formBuilder.title": [
+      "/home/mohammed/form/formio/src/components/FormBuilder.vue"
+    ],
+    "formBuilder.loading": [
+      "/home/mohammed/form/formio/src/components/FormBuilder.vue"
+    ],
+    "formBuilder.save": [
+      "/home/mohammed/form/formio/src/components/FormBuilder.vue"
+    ],
+    "duplicate": [
+      "/home/mohammed/form/formio/src/components/FormBuilder.vue"
+    ],
+    "submit": [
+      "/home/mohammed/form/formio/src/components/renderers/ButtonRenderer.vue"
+    ],
+    "errors.validation": [
+      "/home/mohammed/form/formio/src/composables/useErrorHandler.ts"
+    ]
+  }
+}
